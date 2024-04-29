@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- <form action="https://google.com/login" method="" enctype="">
+    <label for="">Email:</label>
+    <input type="text" placeholder="Enter your email">
+    <label for="">Password</label>
+    <input type="password" placeholder="Enter your password">
+    <button type="submit">Login</button>
+  </form> -->
+
+  <!-- <button onclick="alert('Click')">Click</button> -->
+
+  <!-- <button>Click</button> -->
+
+  <!-- <ul>
+    <li data-name="Johhn">John</li>
+    <li data-name="Max">Max</li>
+    <li data-name="Michel">Michel</li>
+    <li data-name="Jimmy">Jimmy</li>
+    <li data-name="Joi">Joi</li>
+  </ul> -->
+
+  <!-- <input type="text" placeholder="Enter something"/> -->
+
+  <!-- <a href="https://google.com">Go to Google</a> -->
+
+  <!-- <div style="background-color: aqua; width: 600px; height: 600px;" id="outer">
+    <div style="background-color: yellow; width: 400px; height: 400px;" id="middle">
+      <div style="background-color: red; width: 200px; height: 200px;" id="inner"></div>
+    </div>
+  </div> -->
+  <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1713830400&semt=sph" alt="">
+  <input type="file" multiple hidden/>
+
+  <script>
+    const input = document.querySelector('input');
+    const img = document.querySelector('img');
+    img.addEventListener('click', function() {
+      input.click();
+    })
+    // outer.addEventListener('click', function() {
+    //   console.log('Click outer');
+    // })
+    // middle.addEventListener('click', function(event) {
+    //   event.stopPropagation();
+    //   console.log('Click middle');
+    // })
+    // inner.addEventListener('click', function(event) {
+    //   event.stopPropagation();
+    //   console.log('Click inner');
+    // })
+
+    // const aTag = document.querySelector('a')
+    // aTag.addEventListener('click', function(event) {
+    //   event.preventDefault();
+    //   alert('You cant leave')
+    // });
+
+    // const form = document.querySelector('form');
+    // form.addEventListener('submit', function(event) {
+    //   event.preventDefault();
+    //   // validarte if all input valid
+    //   // all correct => submit form
+    //   form.submit();
+    //   // something incorrect => show erreo message to user
+    // })
+
+    // const button = document.querySelector('button');
+    // // button.addEventListener('mousedown',function(event) {
+    // //   console.log(event);
+    // // });
+
+    // const input = document.querySelector('input');
+    // input.addEventListener('keydown', function(event) {
+    //   console.log(event);
+    //   if (event.key !== event.key.toUpperCase()) {
+
+    //   } 
+    //   event.stopPropagation();
+    // })
+
+    // // const input = document.querySelector('input');
+    // // input.addEventListener('input', function (event) {
+    // //   console.log(event.target.value);
+    // //   console.log(event.currentTarget);
+    // // });
+
+    // document.body.addEventListener('click', function (event) {
+    //   console.log(event.target);
+    //   console.log('-----------------');
+    //   console.log(event.currentTarget);
+    // });
+    // document.body.addEventListener('click', function(event) {
+    //   // console.log(event);
+    //   console.log(event.target.value);
+    // })
+
+    // const list = document.querySelectorAll('li');
+    // for (let li of list) {
+    //   li.addEventListener('click', function() {
+    //     console.log(this.dataset.name);
+    //   })
+    // }
+
+    // const button = document.querySelector('button');
+    // button.onclick = function() {
+    //   alert('Click #2');
+    // };
+    // function click1() {
+    //   alert('Click ---- 1');
+    // }
+    // function click2() {
+    //   alert('Click ---- 2');
+    // }
+    // button.addEventListener('click', click1);
+    // button.addEventListener('click', click2)
+
+    // setTimeout(() => {
+    //   button.removeEventListener('click', click1);
+    // }, 5000);
+
+    // document.addEventListener('click', function() {
+    //   alert('click somewhere');
+    // });
+
+    // button.addEventListener('click', click1);
+    // setTimeout(() => button.removeEventListener('click', click1), 5000);
+
+    // button.addEventListener('click', function() {
+    //   console.log(this);
+    // })
+
+    // document.body.addEventListener('click', function() {
+    //   console.log(this);
+    // })
+  </script>
+</body>
+</html>

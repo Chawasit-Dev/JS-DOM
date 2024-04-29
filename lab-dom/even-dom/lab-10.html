@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Province
+  <select id="dropdownP">
+    <option value="option1">Bangkok</option>
+    <option value="option2">cheng rai</option>
+    <option value="option3">Udon</option>
+  </select><p id="showP"></p>
+  </p>
+  <p>District
+  <select id="dropdownD">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select><p id="showD"></p>
+  </p>
+  <script>
+    const provinceSe = document.getElementById('dropdownP')
+    const districtSe = document.getElementById('dropdownD')
+    const showP = document.getElementById('showP')
+    const showD = document.getElementById('showD')
+
+
+    function click101(event) {
+      event.preventDefault();
+      showP.textContent = provinceSe.options[provinceSe.selectedIndex].textContent
+    }
+    function click102() {
+      showD.textContent = districtSe.options[districtSe.selectedIndex].textContent
+    }
+
+    provinceSe.addEventListener('click', click101)
+    districtSe.addEventListener('click', click102)
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul class="list"></ul>
+  <script>
+    const ul = document.querySelector('ul')
+    do {
+      const input = prompt('input text: ')
+      const li = document.createElement('li')
+      if( input.trim() == '' || input == null) {
+        break;
+      }
+      // console.log(input)
+      li.innerText=input
+      ul.append(li)
+      // li.insertHTML(ul)
+    } while (true);
+    console.log(ul);
+  </script>
+</body>
+</html>

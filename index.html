@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .list {
+      list-style-type: none;
+    }
+    .active {
+      color: red  ;
+    }
+  </style>
+</head>
+<!--  
+<body class="main">
+  <main id="main-content">
+    <header class="main">Header Content</header>
+    <h1 class="main-topic text-lg" name="first-h1">Hello World</h1>
+    <h1 class="text-lg" nmae="second-h1">Wellcome to my website</h1>
+    <input type="password" class="text-center" />
+    <ul>
+      <li data-product-id="1" data-name="Pepsi">product id : 1</li>
+      <li data-product-id="2" data-name="Pepsi">product id : 2</li>
+      <li data-product-id="3" data-name="Pepsi">product id : 3</li>
+      <li data-product-id="4" data-name="Pepsi">product id : 4</li>
+    </ul>
+  </main>
+  <script>
+    // const main = document.getElementById('main-content');
+    // console.log(main.textContent);
+    // const input = document.querySelector('input');
+    // console.log(input.getAttribute('type'));
+    // console.log(input.setAttribute('type','text'));
+    // input.removeAttribute('disable');
+    // console.log(input.attributes);
+    const firstLi = document.querySelector('li')
+    console.log(firstLi.dataset.productId);
+    console.log(firstLi.dataset.name);
+  </script>
+</body> -->
+<body>
+  <div id="root">
+    <div>Intitial Root Content</div>
+  </div>
+  <div>After Root</div>
+  <footer>
+    <div>
+      <ul>
+        <li class="list">
+          <a href="">Home</a>
+        </li>
+        <li class="todo-item text-center mx-auto list">
+          <a href="">about</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const li = document.querySelector('li');
+    // li.style.backgroundColor = 'green'
+    // li.style.color = 'yellow'
+    // li.style.textDecoration = 'line-through'
+
+    li.style.cssText = `
+      background-color: green;
+      color: yellow;
+      text-decoration: line-through
+    `
+    // li.style.listStyleType = 'none';
+    // li.className += 'active';
+    // console.log(li.className);
+    console.log(li.classList);
+    // li.classList.add('active', 'disabled', 'mx-2');
+    // li.classList.remove('list');
+    li.classList.toggle('active')
+    setTimeout(() => {
+      li.classList.toggle('active')
+    }, 5000)
+
+    li.classList.contains('list');
+    li.classList.contains('omg');
+
+    const footer = document.querySelector('footer')
+    const deepClone = footer.cloneNode(true)
+    // console.log(deepClone);
+    const shallowClone = footer.cloneNode(false)
+    console.log(shallowClone  );
+    const newH1 = document.createElement('h1');
+    newH1.textContent = 'Hellow World'
+
+    const root = document.getElementById('root');
+    root.insertAdjacentElement('afterbegin', newH1)
+  </script>
+</body>
+</html>

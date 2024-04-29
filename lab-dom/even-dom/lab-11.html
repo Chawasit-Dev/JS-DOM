@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="counter">
+    <div class="display" id="display">0</div> 
+    <div class="buttons">
+      <button id="decrement">-</button> 
+      <button id="increment">+</button> 
+      <button id="reset">Reset</button> 
+    </div>
+  </div>
+
+  <script>
+    const display = document.getElementById("display"); 
+    const incrementBtn = document.getElementById("increment"); 
+    const decrementBtn = document.getElementById("decrement"); 
+    const resetBtn = document.getElementById("reset"); 
+  
+    let counter = 0; 
+  
+    // ฟังก์ชันเพิ่มตัวเลข
+    incrementBtn.addEventListener("click", function() {
+      counter++; 
+      display.textContent = counter; 
+    });
+  
+    // ฟังก์ชันลดตัวเลข
+    decrementBtn.addEventListener("click", function() {
+      if (counter > 0) { 
+        counter--;
+      }
+      display.textContent = counter; 
+    });
+  
+    resetBtn.addEventListener("click", function() {
+      counter = 0;
+      display.textContent = counter;
+    });
+  </script>
+</body>
+</html>

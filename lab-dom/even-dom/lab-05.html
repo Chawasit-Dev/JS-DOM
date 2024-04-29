@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" name="nickname" oninput="click0501(event)" >
+  <input type="text" name="job" oninput="click0502(event)">
+
+  <script>
+    const nickname = document.getElementsByName('nickname')
+    const job = document.getElementsByName('job')
+
+    function click0501(event) {
+      console.log(event.target.value);
+    }
+    function click0502(event) {
+      console.log(event.target.value);
+    }
+
+  </script>
+</body>
+</html>

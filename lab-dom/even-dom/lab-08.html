@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="hide">hide</button> 
+  <button id="show" hidden>show</button> 
+  <script>
+    const hide = document.getElementById('hide');
+    const show = document.getElementById('show');
+    let isHidden = false;
+
+    function click08() {
+      if(isHidden) {
+        hide.textContent = 'hide'
+      } else {hide.textContent = 'show'}
+      isHidden = !isHidden
+    }
+
+    hide.addEventListener('click', click08)
+  </script>
+</body>
+</html>
